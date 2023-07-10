@@ -1,0 +1,1033 @@
+@charset "UTF-8";
+
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
+/* Reset box-model and set borders */
+/* ============================================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* common */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 0.8rem;
+}
+
+span {
+  font-size: 0.7rem;
+}
+
+.wrapper {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* header */
+header {
+  /* height: 120px; */
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+header .wrapper {
+  display: flex;
+  max-width: 1360px;
+  width: 100%;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+header .logoimg {
+  width: 500px;
+}
+
+header .menu {
+  margin-left: auto;
+}
+
+header #open {
+  font-size: 26px;
+  cursor: pointer;
+  display: inline-block;
+  align-items: flex-end;
+}
+
+header #open.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  z-index: 1;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.7rem;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay ul {
+  position: absolute;
+  top: 30px;
+  left: 32px;
+  font-size: 0.9rem;
+  line-height: 3;
+}
+
+.overlay li {
+  opacity: 0;
+  transform: translateX(-48px);
+  transition: opacity .3s, transform .5s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay li a {
+  color: white;
+}
+
+/* main */
+main {
+  padding-top: 120px;
+}
+
+main .products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2 minmax(0, 1fr));
+  gap: 0 2%;
+}
+
+.products .item {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  margin-bottom: 96px;
+}
+
+.products .item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products .item h2 {
+  margin-top: 105%;
+}
+
+.viewmore {
+  display: block;
+  text-align: center;
+  margin-bottom: 400px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  max-width: 1340px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+footer .wrapper {
+  margin-right: 0;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+footer ul li {
+  margin-right: 32px;
+  font-size: 0.8rem;
+}
+
+footer .copy {
+  font-size: 0.64rem;
+}
+
+/* products.html */
+main {
+  text-align: center;
+}
+
+main .item {
+  text-align: left;
+}
+
+main p {
+  display: inline-block;
+  width: 50px;
+  margin-bottom: 240px;
+  font-size: 1rem;
+}
+
+/* item1.html */
+/* header */
+header .logo img {
+  width: 240px;
+  margin-bottom: 30px;
+  margin-top: 32px;
+}
+
+header .menu #open {
+  font-size: 48px;
+  margin-top: 0px;
+}
+
+/* main */
+main .sec-title {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+main .item1 {
+  max-width: 800px;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+main .pic {
+  width: 50%;
+}
+
+main .pic img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+main .product-item {
+  width: 800px;
+  margin: 0 auto;
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+main .item-text .span {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+main dl {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+main dl dt {
+  width: 35%;
+}
+
+main dl dd {
+  width: 65%;
+}
+
+main .item-text p {
+  margin-bottom: 40px;
+  display: block;
+}
+
+main .product-item .back {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 500px;
+  content: "";
+  position: absolute;
+  left: 350px;
+}
+
+/* company.html */
+.company {
+  font-size: 1rem;
+}
+
+.company .wrapper {
+  width: 100%;
+  margin-top: 48px;
+  margin-left: auto;
+  padding: 0 40px;
+}
+
+.company .sec-title {
+  margin-bottom: 48px;
+}
+
+.company dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  width: 600px;
+}
+
+.company dt {
+  width: 30%;
+  border-bottom: 1px solid gray;
+  padding: 24px 10px 24px 0;
+}
+
+.company dt:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.company dd {
+  width: 70%;
+  border-bottom: 1px solid gray;
+  padding: 24px 0;
+}
+
+.company dd:nth-child(n + 13) {
+  margin-left: 30%;
+  border-bottom: 0;
+}
+
+.company dd:nth-of-type(6) {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 4px;
+}
+
+.company dd:nth-of-type(n + 7) {
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.company .map {
+  width: 600px;
+}
+
+.company iframe {
+  filter: grayscale(100%);
+  height: 300px;
+  max-width: 100%;
+  z-index: -1;
+  margin-bottom: 160px;
+}
+
+/* about.html */
+.about {
+  padding-top: 150px;
+  margin-bottom: 600px;
+}
+
+.about .wrapper {
+  text-align: left;
+  margin-left: auto;
+
+}
+
+.item-text dt {
+  font-weight: normal;
+}
+
+.about .about-text {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 60px;
+  line-height: 1.8;
+  width: 600px;
+}
+
+
+/* sp */
+@media (max-width: 900px) {
+
+  * {
+    font-size: 1.2rem;
+  }
+
+  body {
+    /* background: pink; */
+  }
+
+  h2,
+  span {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    padding: 0 4%;
+  }
+
+  /* header */
+  header {
+    padding: 0;
+  }
+
+  header h1 img {
+    width: 200px;
+  }
+
+  header #open {
+    font-size: 48px;
+  }
+
+  .overlay ul {
+    top: 24px;
+    left: 24px;
+    line-height: 1.4;
+  }
+
+  .overlay ul li a {
+    font-size: 0.7rem;
+  }
+
+  .overlay #close {
+    top: 24px;
+    right: 24px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  main .products {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(4 minmax(0, 1fr));
+    gap: 0 4%;
+  }
+
+  .products .item {
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    margin-bottom: 120px;
+  }
+
+  .products .item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .products .item h2 {
+    margin-top: 105%;
+  }
+
+
+
+  /* main */
+  .products .item img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .products .item h2 {
+    margin-bottom: 10px;
+  }
+
+  .viewmore {
+    margin-bottom: 130px;
+  }
+
+  /* footer */
+  footer {
+    display: block;
+  }
+
+  footer ul {
+    margin-bottom: 8px;
+  }
+
+  footer ul li {
+    margin-right: 8%;
+  }
+
+  footer ul li a {
+    font-size: 0.88rem;
+  }
+
+  footer .copy {
+    margin-bottom: 24px;
+    display: block;
+    font-size: 0.6rem;
+  }
+
+  footer .wrapper {
+    flex-direction: column;
+  }
+
+  /* item1.html */
+  /* main */
+  .item-1 {
+    margin-top: 24px;
+  }
+
+  .item-1 h2 {
+    font-size: 1.2rem;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .item-1 .pic {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .item-1 .pic img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  main .product-item {
+    width: 100%;
+  }
+
+  main .item1 {
+    display: block;
+  }
+
+  main .pic {
+    margin-bottom: 48px;
+  }
+
+  main .product-item .back {
+    position: initial;
+    margin: 80px 0 160px;
+  }
+
+  /* company.html */
+  .company {
+    box-sizing: border-box;
+  }
+
+  .company .wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 4%;
+  }
+
+  .company h2 {
+    font-size: 1.2rem;
+  }
+
+  .company dl {
+    width: 100%;
+  }
+
+  .company dt {
+    width: 100%;
+    border-bottom: 0;
+    padding: 24px 0 0 8px;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .company dd {
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 8px;
+    font-size: 1rem;
+  }
+
+  .company dd:nth-child(n + 13) {
+    margin-left: 0;
+    border-bottom: 0;
+    padding-left: 8px;
+  }
+
+  .company iframe {
+    margin-bottom: 0;
+  }
+
+  .map {
+    position: relative;
+    width: 100% !important;
+    height: 0;
+    padding-top: 75%;
+    margin-bottom: 120px;
+  }
+
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+}
