@@ -814,6 +814,7 @@ main .product-item .back {
 
   * {
     font-size: 1.2rem;
+    box-sizing: border-box;
   }
 
   body {
