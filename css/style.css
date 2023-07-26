@@ -828,6 +828,7 @@ main .product-item .back {
 
   .wrapper {
     padding: 0 4%;
+    max-width: 100%;
   }
 
   /* header */
@@ -835,9 +836,10 @@ main .product-item .back {
     padding: 0;
   }
 
-  header h1 img {
-    width: 200px;
+  header .logo img {
+    width: 80%;
   }
+
 
   header #open {
     font-size: 48px;
